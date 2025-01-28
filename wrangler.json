@@ -1,0 +1,25 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "esp32-cam-with-workers-ai",
+	"main": "src/index.ts",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"compatibility_date": "2025-01-24",
+	"observability": {
+		"enabled": true
+	},
+	"ai": {
+		"binding": "AI"
+	},
+	"assets": {
+		"directory": "./static/"
+	},
+	"r2_buckets": [
+		{
+			"preview_bucket_name": "esp32-cam-with-workers-ai",
+			"bucket_name": "esp32-cam-with-workers-ai",
+			"binding": "R2"
+		}
+	]
+}
