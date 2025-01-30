@@ -3,6 +3,10 @@
 ## Overview
 This project demonstrates how to build a security camera system leveraging Cloudflare Workers, Workers AI, and R2 for real-time object detection and storage. By using an ESP32-CAM to capture images and Cloudflare’s edge infrastructure for AI processing, this solution is scalable, cost-effective, and highly performant.
 
+This project was made for a IRL meetup at the Cloudflare Lisbon Office.
+
+![presentation](/docs/presentation.jpeg)
+
 ## Features
 - **ESP32-CAM Integration**: Captures images every 5 seconds and sends them to a Cloudflare Worker.
 - **Object Detection**: Workers AI analyzes the images to detect objects, providing labels, bounding boxes, and confidence scores.
@@ -10,8 +14,11 @@ This project demonstrates how to build a security camera system leveraging Cloud
 - **Real-Time Web UI**: Visualizes the results with red bounding boxes and labels for detected objects.
 
 ## Final Result
-
+Hardware:
 ![esp32 cam](/docs/final_result.jpeg)
+
+Web UI
+![ui](/docs/ui.png)
 
 ## System Architecture
 ```mermaid
